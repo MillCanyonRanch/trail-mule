@@ -1,0 +1,166 @@
+html {
+  margin: 0;
+}
+#container {
+  display: flex;
+  border-style: solid;
+  border-width: .5vw;
+  border-color: #B6973E;
+}
+#header {
+  position: absolute;
+  background-color: #181818;
+  min-width: 80%;
+}
+#header p {
+  font-size: 6vw;
+  color:#B6973E;
+  margin: 5% 0 0 5%;
+}
+#main {
+  padding: 15% 5% 0 5%;
+  background-color: #181818;
+  text-align: center;
+}
+#main img {
+  height: auto;
+  width: 80%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#footer {
+  padding: 15% 0 0 0;
+  background-color: #181818;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#contact_info {
+  vertical-align: middle;
+  color:#B6973E;
+  margin:0;
+}
+#contact_info p {
+  margin:0;
+  line-height: 2em;
+}
+#contact_info a {
+  color:#c19862
+}
+@media (orientation: landscape) {
+  #container {
+    flex-direction: row;
+    height: 97vh
+  }
+  #main img {
+    width: 90%;
+    max-width: 700px;
+  }
+  #footer {
+    padding: 15% 0 0 0;
+    width: 98%
+  }
+  #contact_info {
+    font-size: 2vw;
+  }
+}
+@media (orientation: portrait) {
+  #container {
+    flex-direction: column;
+  }
+
+  #footer {
+    padding: 5% 0 5% 10%;
+  }
+  #contact_info {
+    font-size: 3vw;
+  }
+}
+
+  /* (2560x1440) Full HD Display */
+  @media only screen and (max-device-width: 2560px) and (max-device-height: 1440px) {
+
+  }
+  
+  /* (1920x1080) Full HD Display */
+@media only screen
+and (max-device-width: 1920px)
+and (max-device-height: 1080px) {
+
+}
+
+/* (1600x900) HD+ Display */
+@media  screen
+and (max-width: 1600px) {
+}
+/* iPad in portrait and landscape */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+   /* STYLES GO HERE */
+}
+
+/* iPad in landscape */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+  #contact_info p {
+    font-size: 3vh;
+    line-height: 2em;
+  }
+}
+
+/* iPad in portrait */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+  #contact_info p {
+    font-size: 2vh;
+    line-height: 1.5em;
+  }
+}
+
+/* iPhone Xr in portrait and landscape */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 2) { /* STYLES GO HERE */}
+
+/* iPhone Xr in landscape */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 2)
+and (orientation : landscape) {
+
+}
+
+/* iPhone Xr in portrait */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 2)
+and (orientation : portrait) {
+  #contact_info {
+    font-size: 4vw;
+  }
+}
+
+/* iPhone 6, 7 & 8 in portrait and landscape */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { /* STYLES GO HERE */}
+
+/* iPhone 6, 7 & 8 in landscape */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px)
+and (orientation : landscape) { /* STYLES GO HERE */ }
+
+/* iPhone 6, 7 & 8 in portrait */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px)
+and (orientation : portrait) { /* STYLES GO HERE */ }
