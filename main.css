@@ -33,7 +33,6 @@ html {
   padding: 15% 0 0 0;
   background-color: #181818;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
 }
 #contact_info {
   vertical-align: middle;
@@ -42,7 +41,8 @@ html {
 }
 #contact_info p {
   margin:0;
-  line-height: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+ 
 }
 #contact_info a {
   color:#c19862
@@ -50,8 +50,8 @@ html {
 @media (orientation: landscape) {
   #container {
     flex-direction: row;
-    height: 97vh
-  }
+    min-height: 97vh;
+}
   #main img {
     width: 90%;
     max-width: 700px;
@@ -61,37 +61,53 @@ html {
     width: 98%
   }
   #contact_info {
-    font-size: 2vw;
+    font-size: 1.5vw;
+    line-height: 1.5em;
+    
   }
 }
 @media (orientation: portrait) {
   #container {
     flex-direction: column;
   }
-
+  #main img {
+    width: 60%;
+    max-width: 500px;
+  }
   #footer {
     padding: 5% 0 5% 10%;
   }
   #contact_info {
-    font-size: 3vw;
+    font-size: 2.5vw;
+    line-height: 2em;
   }
 }
 
   /* (2560x1440) Full HD Display */
   @media only screen and (max-device-width: 2560px) and (max-device-height: 1440px) {
-
+    #main img {
+      width: 100%;
+      max-width: 800px;
+    }
   }
   
   /* (1920x1080) Full HD Display */
 @media only screen
 and (max-device-width: 1920px)
 and (max-device-height: 1080px) {
-
+  #main img {
+    width: 80%;
+    max-width: 600px;
+  }
 }
 
 /* (1600x900) HD+ Display */
 @media  screen
 and (max-width: 1600px) {
+  #main img {
+    width: 80%;
+    max-width: 600px;
+  }
 }
 /* iPad in portrait and landscape */
 @media only screen 
@@ -105,6 +121,10 @@ and (max-device-width : 1024px)  {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
+  #main img {
+    width: 90%;
+    max-width: 800px;
+  }
   #contact_info p {
     font-size: 3vh;
     line-height: 2em;
@@ -116,6 +136,10 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) { 
+  #main img {
+    width: 60%;
+    max-width: 500px;
+  }
   #contact_info p {
     font-size: 2vh;
     line-height: 1.5em;
@@ -134,7 +158,10 @@ and (min-device-width : 375px)
 and (max-device-width : 812px) 
 and (-webkit-device-pixel-ratio : 2)
 and (orientation : landscape) {
-
+  #main img {
+    width: 70%;
+    max-width: 500px;
+  }
 }
 
 /* iPhone Xr in portrait */
@@ -143,6 +170,10 @@ and (min-device-width : 375px)
 and (max-device-width : 812px) 
 and (-webkit-device-pixel-ratio : 2)
 and (orientation : portrait) {
+  #main img {
+    width: 60%;
+    max-width: 600px;
+  }
   #contact_info {
     font-size: 4vw;
   }
